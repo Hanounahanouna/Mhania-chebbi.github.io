@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <header>
+        <h1>المنظومة الشمسية</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">نظرة عامة</a></li>
+            <li><a href="index.html">الكواكب</a></li>
+            <li><a href="formulaire.html">إعطاء رأي</a></li>
+        </ul>
+    </nav>
+    <section id="feedback">
+        <h2>إعطاء رأي</h2>
+        <form>
+            <label for="fname">الاسم الأول:</label>
+            <input type="text" id="fname" name="fname" required><br><br>
+
+            <label for="lname">الاسم الأخير:</label>
+            <input type="text" id="lname" name="lname" required><br><br>
+
+            <label for="dob">تاريخ الميلاد:</label>
+            <input type="date" id="dob" name="dob" required><br><br>
+
+            <label for="gender">الجنس:</label>
+            <select id="gender" name="gender">
+                <option value="ذكر">ذكر</option>
+                <option value="أنثى">أنثى</option>
+            </select><br><br>
+
+            <label for="email">البريد الإلكتروني:</label>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="governorate">الولاية:</label>
+            <select id="governorate" name="governorate">
+                <option>تونس</option>
+                <option>أريانة</option>
+                <option>بنزرت</option>
+                <option>نابل</option>
+                
+            </select><br><br>
+
+            <label for="feedback">الرأي:</label>
+            <textarea id="feedback" name="feedback"></textarea><br><br>
+
+            <label for="rating">التقييم (من 1 إلى 5):</label>
+            <input type="number" id="rating" name="rating" min="1" max="5" required><br><br>
+
+            <button type="submit">إرسال</button>
+        </form>
+    </section>
+</body>
+</html>
